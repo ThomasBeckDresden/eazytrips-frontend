@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "20px 20px 0 0",
     // padding: `0 ${theme.spacing(2)}px 0 ${theme.spacing(2)}px`,
     bottom: "8%",
+
     zIndex: 2,
   },
 
