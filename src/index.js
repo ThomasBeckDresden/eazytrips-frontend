@@ -9,7 +9,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { deleteToken } from "./auth/auth";
-
+import Div100vh from "react-div-100vh";
 const theme = createTheme({
   typography: {
     fontFamily: [
@@ -33,13 +33,15 @@ ReactDOM.render(
   <Router>
     <TripProvider>
       <ThemeProvider theme={theme}>
-        <Box
-          style={{
-            height: "100vh",
-          }}
-        >
-          <App />
-        </Box>
+        <Div100vh>
+          <Box
+            style={{
+              height: "100%",
+            }}
+          >
+            <App />
+          </Box>
+        </Div100vh>
       </ThemeProvider>
     </TripProvider>
   </Router>,
