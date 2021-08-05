@@ -4,8 +4,16 @@ import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import SearchIcon from "@material-ui/icons/Search";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: "FFFFFF",
+  },
+});
 
 export default function BottomNav() {
+  const classes = useStyles();
   const history = useHistory();
   const handleClickSignIn = (event) => {
     if (history.location.pathname === "/signInPage") {
@@ -14,7 +22,7 @@ export default function BottomNav() {
     return history.push("/signInPage");
   };
   return (
-    <BottomNavigation showLabels>
+    <BottomNavigation showLabels className={classes.root}>
       <BottomNavigationAction
         label="Discover"
         icon={<SearchIcon></SearchIcon>}
