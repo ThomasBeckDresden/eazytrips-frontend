@@ -58,7 +58,7 @@ export default function TripPlanerWrapper() {
           )}
         </Box>
 
-        <Box p={3} mt={5} bgcolor="white" className={classes.contentWrapper}>
+        <Box p={3} mt={25} bgcolor="white" className={classes.contentWrapper}>
           {stage === "tripdates" && <TripDates></TripDates>}
           {stage === "accommodation" && <TripAccomodation></TripAccomodation>}
           {stage === "transportation" && (

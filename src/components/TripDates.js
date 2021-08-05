@@ -27,7 +27,7 @@ export default function TripDates() {
 
   return (
     <>
-      <Box mt={1} mb={4}>
+      <Box mt={1} mb={10}>
         <Typography variant="h5" component="p" color="primary" gutterBottom>
           Travel dates
         </Typography>

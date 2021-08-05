@@ -10,6 +10,9 @@ const useStyles = makeStyles({
   root: {
     backgroundColor: "FFFFFF",
   },
+  items: {
+    zIndex: 3,
+  },
 });
 
 export default function BottomNav() {
@@ -24,17 +27,20 @@ export default function BottomNav() {
   return (
     <BottomNavigation showLabels className={classes.root}>
       <BottomNavigationAction
+        className={classes.items}
         label="Discover"
         icon={<SearchIcon></SearchIcon>}
         name="discover"
         onClick={(e) => history.push("/")}
       />
       <BottomNavigationAction
+        className={classes.items}
         label="Saved Trips"
         icon={<BookmarkBorderIcon />}
         onClick={(e) => history.push("/savedtrips")}
       />
       <BottomNavigationAction
+        className={classes.items}
         label="Profile"
         icon={<AccountCircleIcon />}
         onClick={handleClickSignIn}

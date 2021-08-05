@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: "border-box",
     borderRadius: "20px 20px 0 0",
     // padding: `0 ${theme.spacing(2)}px 0 ${theme.spacing(2)}px`,
-    bottom: "10%",
+    bottom: "8%",
+    zIndex: 2,
   },
 
   drawerOpen: {
